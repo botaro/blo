@@ -4,4 +4,4 @@ url=git@github.com:botaro/tes
 
 # git branch -M main
 
-git push origin master
+git push origin main
