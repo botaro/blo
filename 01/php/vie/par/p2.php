@@ -3,11 +3,11 @@
 
 <br>
 <br>
-<div class="btn btn-bl2">
-p2</div>
+<div class="p-2 text-center text-white bg-bl2">
 <?php
 echo $_POST["tip"];
 ?> 
+</div>
 
 <br>
 <br>
