@@ -1,8 +1,10 @@
 <?php
-//echo $tip;
+if($met=="POST"){
+$pos=$_POST["tip"];
+echo $pos;
 $tit="select tit from go where typ=:typ";
 $stm=$db->prepare($tit);
-$stm->bindValue(":typ",$tip);
+$stm->bindValue(":typ",$pos);
 $r=$stm->execute();
 $ar=array();
 
@@ -16,6 +18,7 @@ $cnt=count($ar);
 echo $cnt."<br>";
 
 sort($ar);
+}
 
 /* for($j=0;$j<$cnt;$j++){ */
 /* print_r($ar[$j][0]."<br>"); */
