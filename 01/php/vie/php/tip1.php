@@ -1,12 +1,9 @@
 <?php
 
-$ver=SQLite3::version();
+/* $d=getcwd(); */
+/* $dbn=$d."/vie/php/db/go.db"; */
+/* $db=new SQLite3($dbn); */
 
-$ve2=$ver["versionString"];
-$d=getcwd();
-$dbn=$d."/vie/php/db/go.db";
-
-$db=new SQLite3($dbn);
 $stm="select distinct(typ) from go;";
 $r=$db->query($stm);
 

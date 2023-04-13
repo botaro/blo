@@ -1,1 +1,1 @@
-select tit,typ,rowid from go ;
+select tit,rowid from go where typ="go" ;
