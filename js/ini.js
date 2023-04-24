@@ -1,8 +1,6 @@
-let Esc=fun=>addEventListener("scroll",e=>fun)
-let Ecl=fun=>addEventListener("click",e=>fun)
 
-let sel=a=> document.querySelector(a)
-,cl=a=> console.log(a)
+//let sel=a=> document.querySelector(a)
+let cl=a=> console.log(a)
 ,crE=id=> document.createElement(id)
 
 let crT=a=> document.createTextNode(a)
