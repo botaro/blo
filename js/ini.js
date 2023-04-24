@@ -16,6 +16,9 @@ let crT=a=> document.createTextNode(a)
 ,dtS=(e,a,b)=> e.dataset.a=b
 ,apC=(e,a)=> e.appendChild(a)
 ,rmC=(e,a)=> e.removeChild(a)
-,adC=(e,f)=>e.addEventListener("click",f)
+
+let adC=(e,f)=>e.addEventListener("click",f)
+,adS=(e,f)=>e.addEventListener("submit",f)
+,adR=fun=>addEventListener("scroll",e=>fun)
 
 
