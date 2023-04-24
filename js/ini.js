@@ -19,6 +19,6 @@ let crT=a=> document.createTextNode(a)
 
 let adC=(e,f)=>e.addEventListener("click",f)
 ,adS=(e,f)=>e.addEventListener("submit",f)
-,adR=fun=>addEventListener("scroll",e=>fun)
+,adR=fun=>e.addEventListener("scroll",fun)
 
 
