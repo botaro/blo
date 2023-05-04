@@ -6,7 +6,7 @@ let cl=a=> console.log(a)
 let crT=a=> document.createTextNode(a)
 ,gId=id=> document.getElementById(id)
 ,gCl=n=> document.getElementsByClassName(n)
-,gTg=id=> document.getElementsByTagName(id)
+,gTn=id=> document.getElementsByTagName(id)
 ,inH=(e,a)=> e.innerHTML=a
 ,clA=(e,a)=> e.classList.add(a)
 ,clR=(e,a)=> e.classList.remove(a)
