@@ -115,7 +115,7 @@ drawSprite() {
     translate(pos.x, pos.y);
     rotate(angle);
     imageMode(CENTER);
-image(this.attributes.image, this.offset.x, this.offset.y, this.attributes.image.width * this.attributes.scale, this.attributes.image.height * this.attributes.scale);
+image(this.attributes.image, this.offset.x, this.offset.y, this.attributes.image.width *1/3* this.attributes.scale, this.attributes.image.height*1/3 * this.attributes.scale);
 pop();
   }
 
