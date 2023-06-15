@@ -1,10 +1,11 @@
-let Sys = function(position) {
+let Sys = function(position,img) {
   this.origin = position.copy();
   this.tics = [];
+    this.img=img
 };
 
-Sys.prototype.addTic= function(c1,c2,c3) {
-  this.tics.push(new Tic(this.origin,c1,c2,c3));
+Sys.prototype.addTic= function() {
+this.tics.push(new Tic(this.origin,this.img));
 };
 
 Sys.prototype.run = function() {
