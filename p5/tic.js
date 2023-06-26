@@ -1,31 +1,28 @@
-let Tic = function(position,img) {
-  this.acceleration = createVector(0, 0.05);
-  this.velocity = createVector(random(-1, 1), random(-1, 0));
-  this.position = position.copy();
-  this.lifespan = 255;
-    this.img=img
-};
+let Tic = function(pos,img,gra) {
+  this.acc = createVector(0, gra)
+  this.vel = createVector(random(-2, 2), random(-2, 2))
+  this.pos = pos.copy()
+  this.span = 255
+  this.img=img
+}
 
 Tic.prototype.run = function() {
-  this.update();
-  this.display();
-};
+  this.update()
+  this.display()
+}
 
 Tic.prototype.update = function(){
-  this.velocity.add(this.acceleration);
-  this.position.add(this.velocity);
-  this.lifespan -= 2;
-};
+  this.vel.add(this.acc)
+  this.pos.add(this.vel)
+  this.span -= 2
+}
 
-Tic.prototype.display = function( ) {
-noStroke()
-image(this.img,this.position.x, this.position.y, 48, 48);
+Tic.prototype.display = function() {
+image(this.img,this.pos.x, this.pos.y, 48, 48)
 
+}
 
-};
+Tic.prototype.isDead = ()=>this.span < 0
 
-Tic.prototype.isDead = function(){
-  return this.lifespan < 0;
-};
 
 
