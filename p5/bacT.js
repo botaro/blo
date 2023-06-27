@@ -1,7 +1,7 @@
-function bacT(){
+function bacT(w,h){
 let a=createA("/","back")
     a.style("color","blue")
-    a.position(20,h*9/10)
+    a.position(w,h)
 
     return a
 }
