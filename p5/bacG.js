@@ -1,6 +1,6 @@
 function bacG(url,w,h){
 
-let a=createA(url,"もう一度")
+let a=createA(url,"again")
     a.style("color","blue")
     a.position(w,h)
 
